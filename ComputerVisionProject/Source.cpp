@@ -1094,7 +1094,7 @@ void findOverAllHole()
 			break;
 		case 3:
 			rectangle(outputImage, boundRect, Scalar(0, 0, 255), 2);
-			putText(outputImage, "18", Point(boundRect.x, boundRect.y), 1, 1, Scalar(0, 0, 255), 1.8);
+			putText(outputImage, "48", Point(boundRect.x, boundRect.y), 1, 1, Scalar(0, 0, 255), 1.8);
 			break;
 
 			//            case 3:
