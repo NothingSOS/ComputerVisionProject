@@ -985,7 +985,7 @@ int TwoHead(vector<Point> contr)
 			if (cutShabShab(21, contr) == 2) //ฎ
 				return 13;
 			else //ฏ
-				return vowel1(contr);
+				return 14;
 			break;
 		default:
 			if (cutShabShab(36, contr) == 2) //ส
@@ -1091,6 +1091,10 @@ void findOverAllHole()
 			a = to_string(TwoHead(contr[i]));
 			rectangle(outputImage, boundRect, Scalar(0, 255, 255), 2);
 			putText(outputImage, a, Point(boundRect.x, boundRect.y), 1, 1, Scalar(0, 0, 255), 1.8);
+			break;
+		case 3:
+			rectangle(outputImage, boundRect, Scalar(0, 0, 255), 2);
+			putText(outputImage, "18", Point(boundRect.x, boundRect.y), 1, 1, Scalar(0, 0, 255), 1.8);
 			break;
 
 			//            case 3:
